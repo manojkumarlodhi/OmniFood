@@ -50,3 +50,135 @@ body{
     line-height: 1;
     font-weight: 400;
 }
+/*********************************/
+/* HEADER */
+/**********************************/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9.6rem;
+    background-color: #fae5d3;
+    padding: 3.2rem  4.8rem;
+}
+.logo{
+    height: 2.2rem;
+}
+.main-nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3.2rem;
+    font-size: 1.8rem;
+    
+}
+.main-nav-link:link,
+.main-nav-link:visited{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s;
+
+}
+.btn-cta.btn-nav-link:link,
+.btn-cta.btn-nav-link:visited{
+    background-color:#e67e22;
+    padding: 1.2rem 2.4rem;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.3s;
+}
+.btn-cta.btn-nav-link:hover,
+.btn-cta.btn-nav-link:active{
+    background-color: #cf711f;
+}
+.main-nav-link:hover,
+.main-nav-link:active{
+    color: #e67e22;
+}
+/*********************************/
+/* HERO SECTION */
+/*********************************/
+.section-hero{
+    padding: 9.6rem;
+    background-color: #fae5d3;
+}
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+}
+.heading-primary{
+    color: #333;
+    line-height: 1.05;
+    font-size: 5.2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+.heading-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 3.2rem;
+}
+.hero-img{
+    width: 100%;
+}
+.btn:link,
+.btn:visited{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.8rem  !important;
+    display: inline-block;
+}
+.btn-primary:link,
+.btn-primary:visited{
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 1.2rem;
+    transition: all 0.3s;
+}
+.btn-secondary:link,
+.btn-secondary:visited{
+    background-color: white;
+    color: #333;
+}
+.btn-primary:hover,
+.btn-primary:active{
+   background-color: #cf711f;
+}
+.btn-secondary:hover,
+.btn-secondary:active{
+    background-color: #fae5d3;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+.delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+.customer-img img{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fae5d3;
+}
+.customer-img img:last-child{
+    margin-right: 0;
+}
+.customer-text{
+    font-size: 1.8rem;
+    color: #333;
+}
+.customer-text span{
+    color: #cf711f;
+    font-weight: 600;
+}
+

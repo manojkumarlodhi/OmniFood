@@ -50,6 +50,17 @@ body{
     line-height: 1;
     font-weight: 400;
 }
+.container{
+  max-width: 120rem; 
+  padding: 0 3.2rem; 
+  margin: 0 auto;
+}
+.grid{
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    padding: 6.4rem  3.2rem;
+}
 /*********************************/
 /* HEADER */
 /**********************************/
@@ -181,4 +192,81 @@ body{
     color: #cf711f;
     font-weight: 600;
 }
+/************************/
+/* STEP SECTION */
+/************************/
+.grid-2-cols{
+    grid-template-columns: 1fr 1fr;
+}
+.step-img{
+    width: 35%;
+}
+.step-box{
+    align-items: center;
+}
+.step-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.step-img-box::before{
+    width: 60%;
+    background-color: #fdf2e9;
+    padding-top: 60%;
+    
+    z-index: -2;
+}
+.step-img-box::before,
+.step-img-box::after{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+}
 
+.step-img-box::after{
+    width: 45%;
+    background-color: #fae5d3;
+    padding-top: 45%;
+    z-index: -1;
+}
+.subheading{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    color: #cf711f;
+}
+
+.heading-secondary{
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+
+}
+.section-how{
+    padding: 9.6rem  0;
+}
+.grid-center-v{
+    align-items: center;
+}
+.step-number{
+    display: inline-block;
+    font-size: 8.6rem;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+
+}
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
